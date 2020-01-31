@@ -311,7 +311,7 @@ public class Faker {
 
     }
 
-    FakeValuesService fakeValuesService() {
+    public FakeValuesService fakeValuesService() {
         return this.fakeValuesService;
     }
 
