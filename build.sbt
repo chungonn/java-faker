@@ -2,6 +2,7 @@ name := "javafaker"
 
 organization := "com.github.javafaker"
 
+version := "1.0.2-SNAPSHOT"
 
 scalaVersion := "2.13.1"
 
@@ -21,7 +22,7 @@ libraryDependencies ++= Seq(
 
 lazy val javaFaker = project in file(".")
 
-ThisBuild / publishMavenStyle := true
+publishMavenStyle := true
 
-ThisBuild / publishArtifact in (Compile, packageSrc) := false
+publishArtifact in (Compile, packageDoc) := false
 
